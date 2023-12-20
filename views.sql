@@ -12,5 +12,18 @@ go
 
 select * from discharged_patients;
 
+go
+
 -- second view --
--- 
+-- показывает комнаты, их вместимость, текущее количество людей и их пол
+
+create or alter view room_information(room_id, capacity, current_count, gender) as
+select r.room_id, capacity, count(*) current_count, gender current_count from room r 
+join stay s on r.room_id = s.room_id
+join patient p on s.patient_id = p.patient_id
+where s.end_date is null
+group by r.room_id, capacity, gender
+
+go
+
+select * from room_information
