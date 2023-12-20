@@ -60,7 +60,12 @@ insert into service (service_id, name, type, price) values
 (5, 'neurologist appointment', 'doctor', 2000),
 (7, 'blood vitamins test', 'test', 10000),
 (8, 'pleural punction', 'surgery', 0),
-(9, 'pulmonologist appointment', 'doctor', 0)
+(9, 'pulmonologist appointment', 'doctor', 0),
+(10, 'standart appointment', 'doctor', 0),
+(11, 'standart operation', 'surgery', 0)
+
+
+select * from service
 
 go
 
@@ -117,3 +122,29 @@ insert into stay (patient_id, start_date, end_date, room_id, diagnosis) values (
 insert into stay (patient_id, start_date, end_date, room_id, diagnosis) values (6, '04/12/2023', '16/12/2023', 364, 'maecenas leo');
 
 select * from stay
+
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '09/10/2023', 15, 2, 0, 1);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '27/09/2023', 10, 5, 0, 1);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '06/10/2023', 13, 5, 1, 0);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '20/11/2023', 7, 9, 0, 1);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '04/10/2023', 2, 6, 1, 1);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '12/10/2023', 8, 7, 0, 0);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '01/11/2023', 2, 6, 1, 1);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '16/10/2023', 3, 9, 0, 1);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '06/12/2023', 9, 2, 0, 1);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '07/10/2023', 6, 9, 1, 1);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '06/11/2023', 7, 3, 1, 1);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '14/11/2023', 6, 10, 1, 0);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '20/10/2023', 3, 5, 0, 1);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '15/11/2023', 8, 4, 0, 1);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '05/11/2023', 8, 10, 1, 1);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '01/10/2023', 12, 8, 1, 1);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '16/09/2023', 8, 6, 0, 1);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '20/10/2023', 12, 2, 0, 0);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '05/11/2023', 11, 2, 0, 1);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '28/10/2023', 6, 10, 1, 1);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '10/10/2023', 7, 2, 0, 1);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '30/09/2023', 4, 3, 0, 0);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '09/11/2023', 13, 2, 0, 1);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '16/09/2023', 9, 5, 0, 1);
+insert into surgery (service_id, date, patient_id, doctor_id, is_complicated, is_successful) values (11, '09/11/2023', 3, 1, 0, 1);

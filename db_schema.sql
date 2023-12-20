@@ -86,7 +86,6 @@ CREATE TABLE [surgery] (
   [surgery_id] integer PRIMARY KEY IDENTITY(1, 1),
   [service_id] integer NOT NULL,
   [date] datetime NOT NULL,
-  [description] text NOT NULL,
   [patient_id] integer NOT NULL,
   [doctor_id] integer NOT NULL,
   [is_complicated] bit,
